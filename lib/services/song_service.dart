@@ -12,10 +12,12 @@ import '../models/artist.dart';
 import '../models/song_set.dart';
 
 class SongService {
-  static const String _apiUrl = 'https://adminka.synapps.sk/api/songs';
-  static const String _tagsApiUrl = 'https://adminka.synapps.sk/api/song-tags';
-  static const String _apiUser = 'api_user';
-  static const String _apiPassword = '***REMOVED***';
+  static const String _apiUrl = String.fromEnvironment('SONGBOOK_API_URL',
+      defaultValue: 'https://adminka.synapps.sk/api/songs');
+  static const String _tagsApiUrl = String.fromEnvironment('SONGBOOK_TAGS_API_URL',
+      defaultValue: 'https://adminka.synapps.sk/api/song-tags');
+  static const String _apiUser = String.fromEnvironment('SONGBOOK_API_USER', defaultValue: '');
+  static const String _apiPassword = String.fromEnvironment('SONGBOOK_API_PASSWORD', defaultValue: '');
 
   static Map<String, String> _getAuthHeaders() {
     final credentials = base64Encode(utf8.encode('$_apiUser:$_apiPassword'));
