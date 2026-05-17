@@ -53,10 +53,6 @@ flutter build macos            # macOS
 flutter build web              # Web
 ```
 
-## License
-
-[MIT](LICENSE) © Michal Čečko
-
 ## API credentials (build-time)
 
 The app authenticates to `adminka.synapps.sk/api/*` via HTTP Basic Auth. Credentials are injected at build time using `--dart-define`:
@@ -74,3 +70,7 @@ flutter build apk \
 Optional overrides: `SONGBOOK_API_URL`, `SONGBOOK_TAGS_API_URL`.
 
 If unset, the API calls fail unauthorized and the app falls back to the bundled `assets/songs.json` demo data.
+
+## License
+
+[MIT](LICENSE) © Michal Čečko
