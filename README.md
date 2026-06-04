@@ -55,7 +55,7 @@ flutter build web              # Web
 
 ## API credentials (build-time)
 
-The app authenticates to `adminka.synapps.sk/api/*` via HTTP Basic Auth. Credentials are injected at build time using `--dart-define`:
+The app authenticates to `dashboard.cecko.dev/api/*` via HTTP Basic Auth. Credentials are injected at build time using `--dart-define`:
 
 ```bash
 flutter run \

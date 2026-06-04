@@ -67,7 +67,7 @@ Uses `StatefulWidget` + `setState()` throughout. No Provider, Riverpod, or Bloc.
 ### Data Flow
 
 `SongService` (all static methods) handles data loading with a fallback chain:
-1. **API sync** — fetches from `https://adminka.synapps.sk/api/` (endpoints: `/songs`, `/song-tags`) using HTTP Basic Auth
+1. **API sync** — fetches from `https://dashboard.cecko.dev/api/` (endpoints: `/songs`, `/song-tags`) using HTTP Basic Auth
 2. **Local cache** — JSON files (`songs.json`, `tags.json`) in app documents directory via `path_provider`
 3. **Bundled assets** — `assets/songs.json` as final fallback
 

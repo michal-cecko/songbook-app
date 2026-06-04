@@ -13,9 +13,9 @@ import '../models/song_set.dart';
 
 class SongService {
   static const String _apiUrl = String.fromEnvironment('SONGBOOK_API_URL',
-      defaultValue: 'https://adminka.synapps.sk/api/songs');
+      defaultValue: 'https://dashboard.cecko.dev/api/songs');
   static const String _tagsApiUrl = String.fromEnvironment('SONGBOOK_TAGS_API_URL',
-      defaultValue: 'https://adminka.synapps.sk/api/song-tags');
+      defaultValue: 'https://dashboard.cecko.dev/api/song-tags');
   static const String _apiUser = String.fromEnvironment('SONGBOOK_API_USER', defaultValue: '');
   static const String _apiPassword = String.fromEnvironment('SONGBOOK_API_PASSWORD', defaultValue: '');
 
